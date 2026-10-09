@@ -11,14 +11,14 @@ body {
 }
 
 h1 {
-    -webkit-text-stroke: 0.3px rgb(0, 0, 0);
-    color: #9c89b8;
+    -webkit-text-stroke: 0.3px rgb(254, 254, 254);
+    color: #c2a5e1;
     font-size: 55px;
     text-align: center;
     margin: 0;
 }
 
-.cork-board {
+.intro-card {
     background-color: #e3edf3;
     border-radius: 10px;
     border: 2px solid #ffffff;
@@ -38,7 +38,39 @@ h1 {
     gap: 20px;
 }
 
+.image-carousel {
+    margin: 100px;
+    width: 90%;
+    display: flex;
+    overflow-x: auto;
+}
+
+.carousel::-webkit-crollbar {
+    display: none;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 5s infinite linear;
+    padding-right: 1em;
+}
+
+.image-card {
+    flex: 0 0 5em;
+    padding: 1em;
+
+}
+
 #minihead {
     margin-top: 20px;
     font-size: 22px;
+    color: #a780d0;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
 }
