@@ -2,12 +2,11 @@ body {
     text-align: left;
     Background-color: white;
     color: #000000;
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "Sora", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     margin: 0;
-    padding: 0;
 }
 
 h1 {
@@ -15,6 +14,13 @@ h1 {
     font-size: 55px;
     text-align: center;
     margin: 0;
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
 }
 
 #minihead {
@@ -23,17 +29,20 @@ h1 {
     color: #a780d0;
 }
 
+
 #intro-card {
-    background-color: rgb(249, 249, 249);
-    border: 10px solid rgb(143, 143, 143);
-    margin: 50px;
+    background-color: #F4EFFA;
+    color: #000000;
+    margin: 0;
     padding: 20px;
 }
 
+
+
 .about-card {
-    background-color: #e3edf3;
+    font-size: 18px;
     padding: 20px;
-    margin: 100px;
+    margin: 0;
     flex-direction: row-reverse;
     display: flex;
     align-items: center;
@@ -41,11 +50,37 @@ h1 {
     gap: 20px;
 }
 
+
 .intro-paragraphs {
-    color: #4b6675;
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.intro-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.jump-buttons {
+    background-color: #a780d0;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: "Sora", sans-serif;
+    color: white;
+    padding: 10px;
+}
+
+#intro-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
 }
 
 .image-carousel {
