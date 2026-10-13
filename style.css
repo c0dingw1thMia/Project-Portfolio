@@ -80,12 +80,11 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: 3em;
 }
 
 .image-carousel {
-    margin: 100px;
-    width: 90%;
+    margin: 0px;
     display: flex;
     overflow-x: auto;
 }
@@ -99,7 +98,7 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 1em;
-    animation: spin 5s infinite linear;
+    animation: spin 18s infinite linear;
     padding-right: 1em;
 }
 
