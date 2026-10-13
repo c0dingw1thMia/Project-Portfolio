@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     text-align: left;
     Background-color: white;
@@ -11,7 +15,7 @@ body {
 
 h1 {
     color: #c2a5e1;
-    font-size: 55px;
+    font-size: 68px;
     text-align: center;
     margin: 0;
     font-family: "Fraunces", serif;
@@ -24,8 +28,8 @@ h1 {
 }
 
 h2 {
-    color: #000000;
-    font-size: 45px;
+    color: white;
+    font-size: 55px;
     text-align: left;
     margin: 0;
     font-family: "Fraunces", serif;
@@ -37,4 +41,13 @@ h2 {
     "WONK" 0;
 }
 
-.
+h3 {
+    
+    color: #a780d0;
+}
+
+.tiny-text {
+    font-size: 12px; 
+    font-style: italic;
+    color: grey;
+}
