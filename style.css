@@ -23,91 +23,18 @@ h1 {
     "WONK" 0;
 }
 
-#minihead {
-    margin-top: 20px;
-    font-size: 22px;
-    color: #a780d0;
-}
-
-
-#intro-card {
-    background-color: #F4EFFA;
+h2 {
     color: #000000;
+    font-size: 45px;
+    text-align: left;
     margin: 0;
-    padding: 20px;
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
 }
 
-
-
-.about-card {
-    font-size: 18px;
-    padding: 20px;
-    margin: 0;
-    flex-direction: row-reverse;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-
-.intro-paragraphs {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.intro-buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-}
-
-.jump-buttons {
-    background-color: #a780d0;
-    border: none;
-    border-radius: 30px;
-    font-size: 18px;
-    font-family: "Sora", sans-serif;
-    color: white;
-    padding: 10px;
-}
-
-#intro-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 3em;
-}
-
-.image-carousel {
-    margin: 0px;
-    display: flex;
-    overflow-x: auto;
-}
-
-.image-carousel::-webkit-scrollbar {
-    display: none;
-}
-
-.group-inner-carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-    animation: spin 18s infinite linear;
-    padding-right: 1em;
-}
-
-.image-card {
-    flex: 0 0 5em;
-    padding: 1em;
-}
-
-@keyframes spin {
-    from {translate: 0;}
-    to {translate: -100%;}
-}
+.

@@ -8,59 +8,159 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <title>Amaya's Project Portfolio</title>
+    <style>
+        #minihead {
+            margin-top: 20px;
+            font-size: 22px;
+            color: #a780d0;
+        }
+
+        #intro-card {
+            background-color: #F4EFFA;
+            color: #000000;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .about-card {
+            font-size: 18px;
+            padding: 20px;
+            margin: 0;
+            flex-direction: row-reverse;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .intro-paragraphs {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .intro-buttons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+        } 
+
+        .jump-buttons {
+            background-color: #a780d0;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-family: "Sora", sans-serif;
+            color: white;
+            padding: 10px;
+        }
+
+        #intro-buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 3em;
+        }
+
+        #image-carousel {
+            margin: 0px;
+            display: flex;
+            overflow-x: auto;
+            background-image: linear-gradient(to bottom, #F4EFFA, #C8B1E4)
+        }
+
+        #image-carousel::-webkit-scrollbar {
+            display: none;
+        }
+
+        .group-inner-carousel {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1em;
+            animation: spin 18s infinite linear;
+            padding-right: 1em;
+        }
+
+        .image-card {
+            flex: 0 0 5em;
+            padding: 1em;
+        }
+
+        @keyframes spin {
+            from {translate: 0;}
+            to {translate: -100%;}
+        }
+    </style>
 </head>
 <body>
     <div id="intro-card">
-    <header>
-        <h1 id="minihead"><i>Welcome to...</i></h1>
-        <h1 id="bighead">Amaya's Project Portfolio</h1>
-    </header>
-    <main>
+        <header>
+            <h1 id="minihead"><i>Welcome to...</i></h1>
+            <h1 id="bighead">Amaya's Project Portfolio</h1>
+        </header>
         <section class="about-card">
             <div class="polaroids">
                 <img src="img/me-photos3.png" alt="mini polaroid pictures of Amaya" height="600px">
             </div>
             <div class="intro-paragraphs">
-            <div id="aboutMe">Hello cool person! My name is Amaya and I'm an aspiring Computer/Software engineer. A few things about myself is I grew up in Miami, FL, I am currently in my Junior year of highschool, I am under the Information Technology Academy, I absolutely love the color purple, and I attend dance classes as my hobby. Im glad to have you on my self-built project portfolio.</div>
-            <div id="purpose">I built this site to have all my projects under one place, all coded and built by me! Practicing my coding languages, learning new ones, and staying active is important for my journey as an engineer!</div>
-            <div id="journey">Going through my Junior year as a full-time student and part-time college student, I am still committed to expanding my skills in technology. I love the practice of learning, testing, and even debugging! (Which is usually super irritating) Something about coding makes me feel like I have to power to create. I am hoping to learn some more hands-on skills as well with hardware. I am currently teaching myself languages like C and Python while practicing front-end like HTMl, CSS, and Javascript. Outside of computer engineering, I also dabble a little in graphic design. Graphic design is another creative outlet for me. My web design classes help me learn different adobe applications and design principles, which I hope may turn into something bigger for me one day. Balancing academics, dance, and studying tech is a lot. But I truly enjoy getting to see different sides of my personality in everything I do.</div>
-            <div id="thanks">Take a look around my work, and thanks for stopping by to check out what I've been building!</div>
+                <div id="aboutMe">
+                    <p>Hello cool person! My name is Amaya and I'm an aspiring Computer/Software engineer. A few things about myself is I grew up in Miami, FL, I am currently in my Junior year of highschool, I am under the Information Technology Academy, I absolutely love the color purple, and I attend dance classes as my hobby. Im glad to have you on my self-built project portfolio.</p>
+                </div>
+                <div id="purpose">
+                    <p>I built this site to have all my projects under one place, all coded and built by me! Practicing my coding languages, learning new ones, and staying active is important for my journey as an engineer!</p>
+                </div>
+                <div id="journey">
+                    <p>Going through my Junior year as a full-time highschool student and part-time college student, I am still committed to expanding my skills in technology. I love the practice of learning, testing, and even debugging! (Which is usually super irritating) Something about coding makes me feel like I have to power to create. I am hoping to learn some more hands-on skills as well with hardware. I am currently teaching myself languages like C and Python while practicing front-end like HTMl, CSS, and Javascript. Outside of computer engineering, I also dabble a little in graphic design. Graphic design is another creative outlet for me. My web design classes help me learn different adobe applications and design principles, which I hope may turn into something bigger for me one day. Balancing academics, dance, and studying tech is a lot. But I truly enjoy getting to see different sides of my personality in everything I do.</p>
+                </div>
+                <div id="thanks">
+                    <p>Take a look around my work, and thanks for stopping by to check out what I've been building!</p>
+                </div>
             </div>
         </section>
         <section class="intro-buttons">
-            <div id="jump-text"><p style="font-size: 12px; color: grey;">jump to...</p></div>
+            <div id="jump-text">
+                <p style="font-size: 12px; color: grey;">jump to...</p>
+            </div>
             <div id="intro-buttons">
-            <button class="jump-buttons">Projects</button>
-            <button class="jump-buttons">Awards</button>
-            <button class="jump-buttons">Miscellaneous</button>
-            <button class="jump-buttons">Contact</button>
+                <button class="jump-buttons">Projects</button>
+                <button class="jump-buttons">Awards</button>
+                <button class="jump-buttons">Miscellaneous</button>
+                <button class="jump-buttons">Contact</button>
             </div>
         </section>
     </div>
-        <section class="image-carousel">
-            <div class="group-inner-carousel">
-                <div class="image-card"><img src="img/scrollbar-1.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-                <div class="image-card"><img src="img/scrollbar-2.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-                <div class="image-card"><img src="img/scrollbar-3.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-                <div class="image-card"><img src="img/scrollbar-4.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-                <div class="image-card"><img src="img/scrollbar-5.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-                <div class="image-card"><img src="img/scrollbar-6.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-                <div class="image-card"><img src="img/scrollbar-7.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-                <div class="image-card"><img src="img/scrollbar-8.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-            </div>
-            <div aria-hidden class="group-inner-carousel">
-                <div class="image-card"><img src="img/scrollbar-1.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-                <div class="image-card"><img src="img/scrollbar-2.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-                <div class="image-card"><img src="img/scrollbar-3.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-                <div class="image-card"><img src="img/scrollbar-4.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-                <div class="image-card"><img src="img/scrollbar-5.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-                <div class="image-card"><img src="img/scrollbar-6.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-                <div class="image-card"><img src="img/scrollbar-7.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-                <div class="image-card"><img src="img/scrollbar-8.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-                <!--Idea: images get large when you drag your cursor on them-->
-            </div>
-        </section>
-    </main>
+        
+    <div id="image-carousel">
+        <div class="group-inner-carousel">
+            <div class="image-card"><img src="img/scrollbar-1.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-2.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-3.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-4.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-5.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-6.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-7.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-8.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
+        </div>
+        <div aria-hidden class="group-inner-carousel">
+            <div class="image-card"><img src="img/scrollbar-1.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-2.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-3.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-4.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-5.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-6.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-7.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-8.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
+            <!--Idea: images get large when you drag your cursor on them-->
+        </div>
+    </div>
+
+    <div id="my-projects-card">
+        <h2>My Projects</h2>
+    </div>
+
     <footer>
 
     </footer>
