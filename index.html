@@ -93,6 +93,7 @@
             padding-right: 1em;
         }
 
+
         .image-card {
             flex: 0 0 5em;
             padding: 1em;
@@ -106,13 +107,23 @@
         .image-card:hover {
             transform: scale(1.5);
             transition: background 150ms ease, transform 150ms ease;
-
         }
 
         #my-projects-card {
             background-color: #C8B1E4;
             margin: 0;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 3em;
+        }
+
+        .project-cards {
+            flex-direction: row-reverse;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
         }
 
         .project-image {
@@ -189,8 +200,18 @@
         </section>
         <!--cute folder icon-->
         <section class="project-cards">
+            <h3>Summer Mystery Box</h3>
+            <img src="img/summer-mystery-box-project.png" class="project-image">
+            <p></p>
+        </section>
+        <section class="project-cards">
             <h3>My First Snowglobe</h3>
+            <img src="img/snowglobe-project.png" class="project-image">
+        </section>
+        <section class="project-cards">
+            <h3>Perfect Day Project (Sunbeam Hackathon)</h3>
             <img src="img/perfect-day-project.png" class="project-image">
+            <p>Shipped: 09/29/26</p>
         </section>
     </div>
 
