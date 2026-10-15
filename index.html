@@ -76,7 +76,7 @@
             padding-top: 50px;
             padding-bottom: 50px;
             display: flex;
-            overflow-x: auto;
+            overflow: hidden;
             background-image: linear-gradient(to bottom, #F4EFFA, #C8B1E4)
         }
 
@@ -103,14 +103,16 @@
             to {translate: -100%;}
         }
 
+        .image-card:hover {
+            transform: scale(1.5);
+            transition: background 150ms ease, transform 150ms ease;
+
+        }
+
         #my-projects-card {
             background-color: #C8B1E4;
             margin: 0;
             padding: 20px;
-        }
-
-        .project-cards {
-            
         }
 
         .project-image {
@@ -160,25 +162,24 @@
         
     <div id="image-carousel">
         <div class="group-inner-carousel">
-            <div class="image-card"><img src="img/scrollbar-1.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-            <div class="image-card"><img src="img/scrollbar-2.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-            <div class="image-card"><img src="img/scrollbar-3.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-            <div class="image-card"><img src="img/scrollbar-4.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-            <div class="image-card"><img src="img/scrollbar-5.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-            <div class="image-card"><img src="img/scrollbar-6.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-            <div class="image-card"><img src="img/scrollbar-7.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-            <div class="image-card"><img src="img/scrollbar-8.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-1.png" alt="mini polaroid picture of Amaya's shopping bags" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-2.png" alt="mini polaroid picture of Amaya at her first internship, Miami EdTech" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-3.png" alt="mini polaroid picture of Amaya's Korean Kitchen Spicy Noodles" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-4.png" alt="mini polaroid picture of the Miami Art Destrict, taken by Amaya" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-5.png" alt="mini polaroid picture of Amaya's second internship at the Goodwill South Florida Headquarters, showing her introductory gifts and cubicle" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-6.png" alt="mini polaroid picture of mini polaroid pictures of Amaya holding her Top Information Technology Freshman award" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-7.png" alt="mini polaroid picture of Amaya workking on hardware at her first internship" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-8.png" alt="mini polaroid picture of Amaya" height="300px"></div>
         </div>
         <div aria-hidden class="group-inner-carousel">
-            <div class="image-card"><img src="img/scrollbar-1.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-            <div class="image-card"><img src="img/scrollbar-2.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-            <div class="image-card"><img src="img/scrollbar-3.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-            <div class="image-card"><img src="img/scrollbar-4.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-            <div class="image-card"><img src="img/scrollbar-5.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-            <div class="image-card"><img src="img/scrollbar-6.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-            <div class="image-card"><img src="img/scrollbar-7.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-            <div class="image-card"><img src="img/scrollbar-8.png" alt="mini polaroid pictures of Amaya" height="300px"></div>
-            <!--Idea: images get large when you drag your cursor on them-->
+            <div class="image-card"><img src="img/scrollbar-1.png" alt="mini polaroid picture of Amaya's shopping bags" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-2.png" alt="mini polaroid picture of Amaya at her first internship, Miami EdTech" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-3.png" alt="mini polaroid picture of Amaya's Korean Kitchen Spicy Noodles" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-4.png" alt="mini polaroid picture of the Miami Art Destrict, taken by Amaya" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-5.png" alt="mini polaroid pictures of Amaya's second internship at the Goodwill South Florida Headquarters, showing her introductory gifts and cubicle" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-6.png" alt="mini polaroid picture of Amaya holding her Top Information Technology Freshman award" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-7.png" alt="mini polaroid picture of Amaya workking on hardware at her first internship" height="300px"></div>
+            <div class="image-card"><img src="img/scrollbar-8.png" alt="mini polaroid picture of Amaya" height="300px"></div>
         </div>
     </div>
 
