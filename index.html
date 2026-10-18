@@ -63,7 +63,7 @@
             transform: scale(1.2);
         }
 
-        #intro-buttons {
+        .intro-buttons {
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -111,33 +111,31 @@
 
         #my-projects-card {
             background-color: #C8B1E4;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-      
         }
 
-        .project-cards {
-            padding: 20px;
-            margin: 60px;
+        .my-projects-card {
+            display: flex;
             flex-direction: row;
+            gap: 30px;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .single-project-cards {
+            padding: 20px;
+            flex-direction: column;
             display: flex;
             align-items: center;
             justify-content: left;
-            gap: 20px;
-            text-align: right;
+            text-align: left;
             color: white;
-            font-size: 24px;
-            background-color: #F4EFFA;
-            border-radius: 8px;
-            border: 4px solid white;
+            font-size: 20px;
         }
 
-        .project-image {
-            height: 600px;
-            align: left;
+        .project-text {
+            margin: 0;
         }
+
     </style>
 </head>
 <body>
@@ -169,7 +167,7 @@
             <div id="jump-text">
                 <p class="tiny-text">jump to...</p>
             </div>
-            <div id="intro-buttons">
+            <div class="intro-buttons">
                 <a href="#my-projects-card"><button class="jump-buttons" type="button">Projects</button></a>
                 <button class="jump-buttons">Awards</button>
                 <button class="jump-buttons">Miscellaneous</button>
@@ -205,34 +203,32 @@
         <section class="project-card-header">
             <h2>My Projects</h2>
         </section>
-        <!--cute folder icon-->
-        <h3>Summer Mystery Box</h3>
-        <section class="project-cards">
-            <img src="img/summer-mystery-box-project.png" class="project-image">
-            <div class="project-paragraphs">
-            <p>Shipped: XX/XX/XX</p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-            <p> In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.</p>
-            </div>
-        </section>
-        <h3>My First Snowglobe</h3>
-        <section class="project-cards">
-            <img src="img/snowglobe-project.png" class="project-image">
-            <div class="project-paragraphs">
-                <p>Shipped: XX/XX/XX</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-                <p> In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.</p>
-            </div>
-        </section>
-        <h3>Perfect Day Project (Sunbeam Hackathon)</h3>
-        <section class="project-cards">
-            <img src="img/perfect-day-project.png" class="project-image">
-            <div class="project-paragraphs">
-                <p>Shipped: 09/29/26</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-                <p> In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.</p>
-            </div>
-        </section>
+        <div class="my-projects-card">
+            <section class="single-project-cards">
+                <h3 class="project-text">Summer Mystery Box</h3>
+                <p class="project-text">Shipped: XX/XX/XX</p>
+                <img src="img/summer-mystery-box-project.png" height="400px">
+                <div class="project-buttons">
+                    
+                </div>
+            </section>
+            <section class="single-project-cards">
+                <h3 class="project-text">My First Snowglobe</h3>
+                <p class="project-text">Shipped: XX/XX/XX</p>
+                <img src="img/snowglobe-project.png" height="400px">
+                <div class="project-buttons">
+                
+                </div>
+            </section>
+            <section class="single-project-cards">
+                <h3 class="project-text"> The Perfect Day Guide</h3>
+                <p class="project-text">Shipped: XX/XX/XX</p>
+                <img src="img/perfect-day-project.png" height="400px">
+                <div class="project-buttons">
+                
+                </div>
+            </section>
+        </div>
     </div>
 
     <footer>

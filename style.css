@@ -30,7 +30,7 @@ h1 {
 h2 {
     color: white;
     font-size: 55px;
-    text-align: left;
+    text-align: center;
     margin: 0;
     font-family: "Fraunces", serif;
     font-optical-sizing: auto;
@@ -42,7 +42,7 @@ h2 {
 }
 
 h3 {
-    font-size: 45px;
+    font-size: 30px;
     font-family: "Fraunces", serif;
     font-optical-sizing: auto;
     font-weight: 400;
